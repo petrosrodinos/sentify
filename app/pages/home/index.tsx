@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Zap, Shield, Brain, Bell, Twitter, MessageCircle, Globe, CheckCircle, Clock, Mail, AlertTriangle, BarChart3, Target, Sparkles, Smartphone, MessageSquare } from "lucide-react";
 import Image from "next/image";
 import WaitlistForm from "./components/waitlist-form";
+import { LiveMarketIntelligence } from "@/app/pages/home/components/live-market-alerts";
+import { SetupDemo } from "@/app/pages/home/components/setup-demo";
 
 export default function Home() {
   return (
@@ -87,74 +89,7 @@ export default function Home() {
                 <WaitlistForm />
               </div>
 
-              <div className="relative">
-                <div className="bg-gradient-to-br from-slate-100/50 to-slate-200/50 dark:from-slate-800/50 dark:to-slate-700/50 rounded-2xl p-8 border border-slate-200/50 dark:border-slate-600/50">
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-3 mb-6">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-medium text-slate-900 dark:text-white">Live Market Intelligence</span>
-                    </div>
-
-                    <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <Twitter className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                        <span className="text-xs text-slate-500 dark:text-slate-400">@elonmusk • 2m ago</span>
-                        <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 ml-auto">
-                          Bullish
-                        </Badge>
-                      </div>
-                      <p className="text-sm text-slate-900 dark:text-white mb-2">Tesla Q4 results exceeded expectations. Production ramping up significantly.</p>
-                      <div className="flex items-center space-x-2">
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          TSLA
-                        </Badge>
-                        <span className="text-xs text-green-600 dark:text-green-400">+5.2%</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <Globe className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Reuters • 5m ago</span>
-                        <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 ml-auto">
-                          Positive
-                        </Badge>
-                      </div>
-                      <p className="text-sm text-slate-900 dark:text-white mb-2">Bitcoin ETF approval expected this week, sources say</p>
-                      <div className="flex items-center space-x-2">
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          BTC
-                        </Badge>
-                        <span className="text-xs text-green-600 dark:text-green-400">+3.8%</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <MessageCircle className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                        <span className="text-xs text-slate-500 dark:text-slate-400">r/wallstreetbets • 8m ago</span>
-                        <Badge variant="secondary" className="text-xs bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 ml-auto">
-                          Bearish
-                        </Badge>
-                      </div>
-                      <p className="text-sm text-slate-900 dark:text-white mb-2">Market sentiment shifting negative on tech stocks</p>
-                      <div className="flex items-center space-x-2">
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          NASDAQ
-                        </Badge>
-                        <span className="text-xs text-red-600 dark:text-red-400">-1.2%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute -top-4 -right-4 bg-white dark:bg-slate-800 rounded-lg p-3 shadow-lg border border-slate-200 dark:border-slate-700">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs font-medium text-slate-900 dark:text-white">Real-time</span>
-                  </div>
-                </div>
-              </div>
+              <LiveMarketIntelligence />
             </div>
           </div>
         </section>
@@ -293,46 +228,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-slate-100/50 to-slate-200/50 dark:from-slate-800/50 dark:to-slate-700/50 rounded-2xl p-8 border border-slate-200/50 dark:border-slate-600/50">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">Live Monitoring</span>
-                  </div>
-                  <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Twitter className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                      <span className="text-xs text-slate-500 dark:text-slate-400">@elonmusk • 2m ago</span>
-                    </div>
-                    <p className="text-sm text-slate-900 dark:text-white">Tesla Q4 results exceeded expectations. Production ramping up significantly.</p>
-                    <div className="flex items-center space-x-2 mt-2">
-                      <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
-                        Bullish
-                      </Badge>
-                      <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                        TSLA
-                      </Badge>
-                    </div>
-                  </div>
-                  <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Globe className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                      <span className="text-xs text-slate-500 dark:text-slate-400">Reuters • 5m ago</span>
-                    </div>
-                    <p className="text-sm text-slate-900 dark:text-white">Bitcoin ETF approval expected this week, sources say</p>
-                    <div className="flex items-center space-x-2 mt-2">
-                      <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
-                        Positive
-                      </Badge>
-                      <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                        BTC
-                      </Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <LiveMarketIntelligence title="Live Monitoring" />
           </div>
         </section>
 
@@ -407,76 +303,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="relative">
-                <div className="bg-gradient-to-br from-slate-100/50 to-slate-200/50 dark:from-slate-800/50 dark:to-slate-700/50 rounded-2xl p-8 border border-slate-200/50 dark:border-slate-600/50">
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-3 mb-6">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-medium text-slate-900 dark:text-white">Live Setup Demo</span>
-                    </div>
-
-                    <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                      <div className="flex items-center space-x-2 mb-3">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Step 1: Select Accounts</span>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="flex items-center space-x-2">
-                          <div className="w-3 h-3 bg-slate-300 dark:bg-slate-600 rounded"></div>
-                          <span className="text-xs text-slate-700 dark:text-slate-300">@elonmusk</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <div className="w-3 h-3 bg-slate-300 dark:bg-slate-600 rounded"></div>
-                          <span className="text-xs text-slate-700 dark:text-slate-300">@cathiewood</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <div className="w-3 h-3 bg-slate-300 dark:bg-slate-600 rounded"></div>
-                          <span className="text-xs text-slate-700 dark:text-slate-300">r/wallstreetbets</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                      <div className="flex items-center space-x-2 mb-3">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Step 2: Choose Assets</span>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          TSLA
-                        </Badge>
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          BTC
-                        </Badge>
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          ETH
-                        </Badge>
-                        <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                          AI
-                        </Badge>
-                      </div>
-                    </div>
-
-                    <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                      <div className="flex items-center space-x-2 mb-3">
-                        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                        <span className="text-xs text-slate-500 dark:text-slate-400">Step 3: Select Channels</span>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
-                          Telegram
-                        </Badge>
-                        <Badge variant="secondary" className="text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">
-                          Email
-                        </Badge>
-                        <Badge variant="secondary" className="text-xs bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300">
-                          SMS
-                        </Badge>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <SetupDemo />
             </div>
           </div>
         </section>
@@ -543,7 +370,7 @@ export default function Home() {
                     <p className="text-sm text-slate-600 dark:text-slate-400">AI-powered analysis</p>
                   </div>
                 </div>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">Get intelligent insights about potential market impact, not just raw data. Understand the "why" behind market movements.</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm">Get intelligent insights about potential market impact, not just raw data. Understand the &ldquo;why&rdquo; behind market movements.</p>
               </div>
 
               <div className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
@@ -566,7 +393,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900 dark:text-white">Ready to Stay Ahead?</h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">Don't wait for the market to move without you. Join thousands of investors who are already making smarter decisions with AI-powered insights delivered across all your preferred channels.</p>
+              <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">Don&apos;t wait for the market to move without you. Join thousands of investors who are already making smarter decisions with AI-powered insights delivered across all your preferred channels.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">

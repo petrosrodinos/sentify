@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { TrendingUp, Zap, Shield, Brain, Bell, Twitter, MessageCircle, Globe, ArrowRight, CheckCircle, Star, Users, Clock, Mail, AlertTriangle, TrendingDown } from "lucide-react";
+import { TrendingUp, Zap, Shield, Brain, Bell, Twitter, MessageCircle, Globe, ArrowRight, CheckCircle, Star, Users, Clock, Mail } from "lucide-react";
+import { LiveMarketIntelligence } from "@/app/pages/home/components/live-market-alerts";
 
 export default function Home() {
   return (
@@ -252,46 +253,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-slate-100/50 to-slate-200/50 dark:from-slate-800/50 dark:to-slate-700/50 rounded-2xl p-8 border border-slate-200/50 dark:border-slate-600/50">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">Live Monitoring</span>
-                  </div>
-                  <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Twitter className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                      <span className="text-xs text-slate-500 dark:text-slate-400">@elonmusk • 2m ago</span>
-                    </div>
-                    <p className="text-sm text-slate-900 dark:text-white">Tesla Q4 results exceeded expectations. Production ramping up significantly.</p>
-                    <div className="flex items-center space-x-2 mt-2">
-                      <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
-                        Bullish
-                      </Badge>
-                      <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                        TSLA
-                      </Badge>
-                    </div>
-                  </div>
-                  <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Globe className="w-4 h-4 text-slate-600 dark:text-slate-400" />
-                      <span className="text-xs text-slate-500 dark:text-slate-400">Reuters • 5m ago</span>
-                    </div>
-                    <p className="text-sm text-slate-900 dark:text-white">Bitcoin ETF approval expected this week, sources say</p>
-                    <div className="flex items-center space-x-2 mt-2">
-                      <Badge variant="secondary" className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
-                        Positive
-                      </Badge>
-                      <Badge variant="outline" className="text-xs border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
-                        BTC
-                      </Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <LiveMarketIntelligence title="Live Monitoring" />
           </div>
         </section>
 
