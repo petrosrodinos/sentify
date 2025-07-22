@@ -9,8 +9,8 @@ import { SetupDemo } from "@/app/pages/home/components/setup-demo";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800">
-      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm sticky top-0 z-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-slate-100 to-blue-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800">
+      <header className="border-b border-slate-200 dark:border-slate-700 bg-blue-50/90 dark:bg-slate-900/90 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#top" className="flex items-center space-x-2">
             <div className="rounded-lg flex items-center justify-center">
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="border-0 shadow-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
+            <Card className="border-0 shadow-lg bg-blue-50/90 dark:bg-slate-800/90 backdrop-blur-sm">
               <CardHeader>
                 <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center mb-4">
                   <Brain className="w-6 h-6 text-slate-700 dark:text-slate-300" />
@@ -111,7 +111,7 @@ export default function Home() {
               </CardHeader>
             </Card>
 
-            <Card className="border-0 shadow-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
+            <Card className="border-0 shadow-lg bg-blue-50/90 dark:bg-slate-800/90 backdrop-blur-sm">
               <CardHeader>
                 <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center mb-4">
                   <Bell className="w-6 h-6 text-slate-700 dark:text-slate-300" />
@@ -121,7 +121,7 @@ export default function Home() {
               </CardHeader>
             </Card>
 
-            <Card className="border-0 shadow-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
+            <Card className="border-0 shadow-lg bg-blue-50/90 dark:bg-slate-800/90 backdrop-blur-sm">
               <CardHeader>
                 <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="w-6 h-6 text-slate-700 dark:text-slate-300" />
@@ -234,7 +234,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how-it-works" className="bg-white/50 dark:bg-slate-900/50 py-20">
+        <section id="how-it-works" className="bg-blue-50/50 dark:bg-slate-900/50 py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">How It Works</h2>
@@ -310,7 +310,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="why-choose" className="bg-white/50 dark:bg-slate-900/50 py-20">
+        <section id="why-choose" className="bg-blue-50/50 dark:bg-slate-900/50 py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Why Choose Sentify?</h2>
@@ -349,7 +349,7 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
+              <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
                     <Target className="w-5 h-5 text-green-600 dark:text-green-400" />
@@ -362,7 +362,7 @@ export default function Home() {
                 <p className="text-slate-600 dark:text-slate-400 text-sm">Our AI filters out noise and delivers only the most relevant market-moving information for your specific portfolio assets.</p>
               </div>
 
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
+              <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
                     <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400" />
@@ -375,7 +375,7 @@ export default function Home() {
                 <p className="text-slate-600 dark:text-slate-400 text-sm">Get intelligent insights about potential market impact, not just raw data. Understand the &ldquo;why&rdquo; behind market movements.</p>
               </div>
 
-              <div className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
+              <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center">
                     <Shield className="w-5 h-5 text-purple-600 dark:text-purple-400" />
@@ -429,7 +429,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm">
+      <footer className="border-t border-slate-200 dark:border-slate-700 bg-blue-50/90 dark:bg-slate-900/90 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>

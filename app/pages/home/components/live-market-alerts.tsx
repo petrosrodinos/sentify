@@ -92,7 +92,7 @@ export function LiveMarketIntelligence({ title = "Live Market Intelligence", sho
             </div>
             <div className="space-y-4">
               {[1, 2, 3].map((i) => (
-                <div key={i} className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700 animate-pulse">
+                <div key={i} className="bg-blue-50 dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700 animate-pulse">
                   <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded mb-2"></div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded mb-2"></div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
@@ -127,7 +127,7 @@ export function LiveMarketIntelligence({ title = "Live Market Intelligence", sho
           </div>
 
           {alerts.map((alert: Alert) => (
-            <div key={alert.id} className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
+            <div key={alert.id} className="bg-blue-50 dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
               <div className="flex items-center space-x-2 mb-2">
                 {getSourceIcon(alert.platform_type)}
                 <span className="text-xs text-slate-500 dark:text-slate-400">
@@ -150,7 +150,7 @@ export function LiveMarketIntelligence({ title = "Live Market Intelligence", sho
       </div>
 
       {showRealTimeBadge && (
-        <div className="absolute -top-4 -right-4 bg-white dark:bg-slate-800 rounded-lg p-3 shadow-lg border border-slate-200 dark:border-slate-700">
+        <div className="absolute -top-4 -right-4 bg-blue-50 dark:bg-slate-800 rounded-lg p-3 shadow-lg border border-slate-200 dark:border-slate-700">
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
             <span className="text-xs font-medium text-slate-900 dark:text-white">Real-time</span>

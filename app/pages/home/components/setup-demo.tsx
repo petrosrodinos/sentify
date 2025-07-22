@@ -59,7 +59,7 @@ export function SetupDemo({ title = "Setup Demo" }: SetupDemoProps) {
           </div>
 
           {defaultSteps.map((step, index) => (
-            <div key={index} className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
+            <div key={index} className="bg-blue-50 dark:bg-slate-800 rounded-lg p-4 shadow-sm border border-slate-200 dark:border-slate-700">
               <div className="flex items-center space-x-2 mb-3">
                 <div className={`w-2 h-2 ${step.color} rounded-full`}></div>
                 <span className="text-xs text-slate-500 dark:text-slate-400">
