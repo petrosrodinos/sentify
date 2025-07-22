@@ -132,8 +132,8 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid md:grid-cols-2 gap-12 items-start px-3">
+            <div className="max-w-lg">
               <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Monitor Multiple Sources</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -228,7 +228,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <LiveMarketIntelligence title="Live Monitoring" />
+            <div className="flex justify-center">
+              <LiveMarketIntelligence title="Live Monitoring" />
+            </div>
           </div>
         </section>
 

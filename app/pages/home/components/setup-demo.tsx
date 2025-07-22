@@ -10,7 +10,6 @@ interface SetupStep {
 
 interface SetupDemoProps {
   title?: string;
-  showRealTimeBadge?: boolean;
 }
 
 const defaultSteps: SetupStep[] = [
@@ -50,13 +49,12 @@ const getChannelBadgeColor = (channel: string) => {
   }
 };
 
-export function SetupDemo({ title = "Live Setup Demo", showRealTimeBadge = true }: SetupDemoProps) {
+export function SetupDemo({ title = "Setup Demo" }: SetupDemoProps) {
   return (
     <div className="relative">
       <div className="bg-gradient-to-br from-slate-100/50 to-slate-200/50 dark:from-slate-800/50 dark:to-slate-700/50 rounded-2xl p-8 border border-slate-200/50 dark:border-slate-600/50">
         <div className="space-y-4">
           <div className="flex items-center space-x-3 mb-6">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-slate-900 dark:text-white">{title}</span>
           </div>
 
@@ -103,15 +101,6 @@ export function SetupDemo({ title = "Live Setup Demo", showRealTimeBadge = true 
           ))}
         </div>
       </div>
-
-      {showRealTimeBadge && (
-        <div className="absolute -top-4 -right-4 bg-white dark:bg-slate-800 rounded-lg p-3 shadow-lg border border-slate-200 dark:border-slate-700">
-          <div className="flex items-center space-x-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-xs font-medium text-slate-900 dark:text-white">Real-time</span>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
