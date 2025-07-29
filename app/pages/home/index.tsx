@@ -25,9 +25,6 @@ export default function Home() {
             <a href="#how-it-works" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
               How it Works
             </a>
-            <a href="#why-choose" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
-              Why Choose
-            </a>
             <a href="#get-started" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
               Get Started
             </a>
@@ -306,87 +303,6 @@ export default function Home() {
                 </div>
               </div>
               <SetupDemo />
-            </div>
-          </div>
-        </section>
-
-        <section id="why-choose" className="bg-blue-50/50 dark:bg-slate-900/50 py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Why Choose Sentify?</h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Join thousands of investors who stay ahead of the curve with AI-powered market intelligence. Our platform delivers results that speak for themselves.</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-slate-700 dark:text-slate-300" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">24/7 Monitoring</h3>
-                <p className="text-slate-600 dark:text-slate-400">Never miss important market posts</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BarChart3 className="w-8 h-8 text-slate-700 dark:text-slate-300" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">95% Accuracy</h3>
-                <p className="text-slate-600 dark:text-slate-400">AI-powered sentiment analysis</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-slate-700 dark:text-slate-300" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">Early Access</h3>
-                <p className="text-slate-600 dark:text-slate-400">Join the waitlist today</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <AlertTriangle className="w-8 h-8 text-slate-700 dark:text-slate-300" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-white">Limited Spots</h3>
-                <p className="text-slate-600 dark:text-slate-400">Reserve your place now</p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
-                    <Target className="w-5 h-5 text-green-600 dark:text-green-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">Precision Targeting</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Only relevant alerts</p>
-                  </div>
-                </div>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">Our AI filters out noise and delivers only the most relevant market-moving information for your specific portfolio assets.</p>
-              </div>
-
-              <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                    <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">Smart Insights</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">AI-powered analysis</p>
-                  </div>
-                </div>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">Get intelligent insights about potential market impact, not just raw data. Understand the &ldquo;why&rdquo; behind market movements.</p>
-              </div>
-
-              <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">Risk Management</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Protect your portfolio</p>
-                  </div>
-                </div>
-                <p className="text-slate-600 dark:text-slate-400 text-sm">Stay ahead of potential risks and opportunities with early warning systems that give you time to make informed decisions.</p>
-              </div>
             </div>
           </div>
         </section>
