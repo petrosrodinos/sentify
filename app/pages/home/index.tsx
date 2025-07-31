@@ -25,6 +25,9 @@ export default function Home() {
             <a href="#how-it-works" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
               How it Works
             </a>
+            <a href="#roadmap" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
+              Roadmap
+            </a>
             <a href="#get-started" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
               Get Started
             </a>
@@ -307,11 +310,120 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="roadmap" className="bg-slate-50/50 dark:bg-slate-800/50 py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Product Roadmap</h2>
+              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">We're constantly innovating to provide you with the most comprehensive financial intelligence platform. Here's what's coming next.</p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+              <Card className="border-0 shadow-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mb-4">
+                    <BarChart3 className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <CardTitle className="text-slate-900 dark:text-white">Smart Stock Recommendations</CardTitle>
+                  <CardDescription className="text-slate-600 dark:text-slate-400">AI-powered buy/sell signals based on social sentiment, news analysis, and market trends. Get actionable recommendations for your portfolio.</CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="border-0 shadow-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mb-4">
+                    <AlertTriangle className="w-6 h-6 text-green-600 dark:text-green-400" />
+                  </div>
+                  <CardTitle className="text-slate-900 dark:text-white">Earnings & News Integration</CardTitle>
+                  <CardDescription className="text-slate-600 dark:text-slate-400">Comprehensive earnings calendar, financial news aggregation, and real-time updates on company events that impact stock prices.</CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="border-0 shadow-lg bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
+                    <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <CardTitle className="text-slate-900 dark:text-white">Content Summarization</CardTitle>
+                  <CardDescription className="text-slate-600 dark:text-slate-400">AI-powered summaries of YouTube videos, Reddit discussions, and news articles. Get the key insights without reading everything.</CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Coming Soon</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Target className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Portfolio Analytics Dashboard</h4>
+                      <p className="text-slate-600 dark:text-slate-400">Advanced portfolio tracking with performance metrics, risk analysis, and correlation insights based on social sentiment.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Clock className="w-4 h-4 text-green-600 dark:text-green-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Market Timing Alerts</h4>
+                      <p className="text-slate-600 dark:text-slate-400">Get notified about optimal entry and exit points based on sentiment shifts and market momentum indicators.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Brain className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Predictive Analytics</h4>
+                      <p className="text-slate-600 dark:text-slate-400">Machine learning models that predict short-term price movements based on social sentiment patterns and news cycles.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Future Vision</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <TrendingUp className="w-4 h-4 text-orange-600 dark:text-orange-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Automated Trading Signals</h4>
+                      <p className="text-slate-600 dark:text-slate-400">Integration with broker APIs for automated trading based on AI-generated signals and risk management rules.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Globe className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Global Market Coverage</h4>
+                      <p className="text-slate-600 dark:text-slate-400">Expand beyond US markets to include European, Asian, and emerging market stocks and cryptocurrencies.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <MessageSquare className="w-4 h-4 text-pink-600 dark:text-pink-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Community Features</h4>
+                      <p className="text-slate-600 dark:text-slate-400">User-generated insights, discussion forums, and collaborative investment strategies with sentiment analysis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="get-started" className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900 dark:text-white">Ready to Stay Ahead?</h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">Don&apos;t wait for the market to move without you. Join thousands of investors who are already making smarter decisions with AI-powered insights delivered across all your preferred channels.</p>
+              <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">Don&apos;t wait for the market to move without you. Start making smarter decisions with AI-powered insights delivered across all your preferred channels.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
