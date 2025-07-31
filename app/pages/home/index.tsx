@@ -314,7 +314,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Product Roadmap</h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">We're constantly innovating to provide you with the most comprehensive financial intelligence platform. Here's what's coming next.</p>
+              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">We&apos;re constantly innovating to provide you with the most comprehensive financial intelligence platform. Here&apos;s what&apos;s coming next.</p>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8 mb-16">
