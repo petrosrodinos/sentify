@@ -3,9 +3,10 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Zap, Shield, Brain, Bell, Twitter, MessageCircle, Globe, CheckCircle, Clock, Mail, AlertTriangle, BarChart3, Target, Sparkles, Smartphone, MessageSquare } from "lucide-react";
 import Image from "next/image";
-import WaitlistForm from "./components/waitlist-form";
+import Link from "next/link";
 import { LiveMarketIntelligence } from "@/app/pages/home/components/live-market-alerts";
 import { SetupDemo } from "@/app/pages/home/components/setup-demo";
+import { APP_URL } from "@/constants";
 
 export default function Home() {
   return (
@@ -28,68 +29,60 @@ export default function Home() {
             <a href="#roadmap" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
               Roadmap
             </a>
-            <a href="#get-started" className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
-              Get Started
-            </a>
           </nav>
           <div className="flex items-center space-x-4">
-            <a href="#top">
-              <Button size="sm" className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200">
-                Get Started
+            <Link href={`${APP_URL}/auth/sign-in`} target="_blank">
+              <Button variant="ghost" size="sm" className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                Login
               </Button>
-            </a>
+            </Link>
+            <Link href={`${APP_URL}/auth/sign-up`} target="_blank">
+              <Button size="sm" className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200">
+                Register
+              </Button>
+            </Link>
           </div>
         </div>
       </header>
 
       <main>
-        <section className="container mx-auto px-4 py-20">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <Badge variant="secondary" className="mb-6 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
-                <Zap className="w-3 h-3 mr-1" />
+        <section className="container mx-auto px-4 py-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <Badge variant="secondary" className="mb-8 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm px-4 py-2">
+                <Zap className="w-4 h-4 mr-2" />
                 AI-Powered Financial Intelligence
               </Badge>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 dark:from-white dark:via-slate-200 dark:to-slate-300 bg-clip-text text-transparent">Stay Ahead of the Market</h1>
-              <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8 max-w-4xl mx-auto leading-relaxed">Real-time monitoring of Twitter, Reddit, and news sites. AI-powered sentiment analysis delivers instant alerts about your portfolio assets via Telegram, SMS, email, push notifications, Discord, and phone calls.</p>
-              <p className="text-lg text-slate-500 dark:text-slate-500 mb-12 max-w-3xl mx-auto">Whether Elon Musk tweets about Tesla or breaking news drops about Bitcoin regulation, get personalized alerts instantly across all your preferred channels. Never miss market-moving events again.</p>
-            </div>
+              <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 dark:from-white dark:via-slate-200 dark:to-slate-300 bg-clip-text text-transparent leading-tight">
+                Stay Ahead of
+                <br />
+                the Market
+              </h1>
+              <p className="text-2xl md:text-3xl text-slate-600 dark:text-slate-400 mb-10 max-w-5xl mx-auto leading-relaxed font-medium">Real-time monitoring of Twitter, Reddit, and news sites. AI-powered sentiment analysis delivers instant alerts about your portfolio assets.</p>
+              <p className="text-xl text-slate-500 dark:text-slate-500 mb-16 max-w-4xl mx-auto">Whether Elon Musk tweets about Tesla or breaking news drops about Bitcoin regulation, get personalized alerts instantly across all your preferred channels.</p>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-              <div className="space-y-8">
-                <div className="space-y-6">
-                  <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Get Early Access</h2>
-                  <p className="text-lg text-slate-600 dark:text-slate-400">Be among the first to experience the future of financial intelligence. Sign up for early access and get exclusive updates.</p>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900 dark:text-white">Early Bird Pricing</h3>
-                      <p className="text-slate-600 dark:text-slate-400">Get 50% off for the first 3 months</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900 dark:text-white">Priority Support</h3>
-                      <p className="text-slate-600 dark:text-slate-400">Direct access to our development team</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900 dark:text-white">Feature Requests</h3>
-                      <p className="text-slate-600 dark:text-slate-400">Help shape the future of the platform</p>
-                    </div>
-                  </div>
-                </div>
-
-                <WaitlistForm />
+              <div className="flex justify-center items-center mb-16">
+                <Link href={`${APP_URL}/auth/sign-up`} target="_blank">
+                  <Button size="lg" className="text-xl px-12 py-6 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 font-semibold">
+                    Start Free Trial
+                  </Button>
+                </Link>
               </div>
 
-              <LiveMarketIntelligence />
+              <div className="flex items-center justify-center space-x-8 text-sm text-slate-500 dark:text-slate-400">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>No credit card required</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>7-day free trial</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Cancel anytime</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -427,28 +420,40 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <WaitlistForm description="Be among the first to experience the future of financial intelligence." />
+              <div className="bg-slate-50 dark:bg-slate-800/50 rounded-lg p-6 border border-slate-200 dark:border-slate-700">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-3 flex items-center">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Start Your Free Trial
+                </h3>
+                <p className="text-slate-600 dark:text-slate-400 mb-4 text-sm">Create your account and start monitoring your portfolio in minutes.</p>
+                <div className="flex justify-center">
+                  <Link href={`${APP_URL}/auth/sign-up`} target="_blank">
+                    <Button className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 whitespace-nowrap">Start Free Trial</Button>
+                  </Link>
+                </div>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">No credit card required • Cancel anytime</p>
+              </div>
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">Early Bird Pricing</h3>
-                    <p className="text-slate-600 dark:text-slate-400">Get 50% off for the first 3 months</p>
+                    <h3 className="font-semibold text-slate-900 dark:text-white">7-Day Free Trial</h3>
+                    <p className="text-slate-600 dark:text-slate-400">Full access to all features, no commitment</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">Priority Support</h3>
+                    <h3 className="font-semibold text-slate-900 dark:text-white">Premium Support</h3>
                     <p className="text-slate-600 dark:text-slate-400">Direct access to our development team</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white">Feature Requests</h3>
-                    <p className="text-slate-600 dark:text-slate-400">Help shape the future of the platform</p>
+                    <h3 className="font-semibold text-slate-900 dark:text-white">Cancel Anytime</h3>
+                    <p className="text-slate-600 dark:text-slate-400">No long-term contracts or hidden fees</p>
                   </div>
                 </div>
               </div>
