@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)
+# Sentyfi API 🚀
 
-## Getting Started
+> **Real-time Twitter sentiment analysis for cryptocurrency and stock market insights**
 
-First, run the development server
+Sentyfi API is a powerful NestJS-based service that integrates Twitter's API to fetch real-time tweets from selected accounts. These tweets are analyzed using AI to detect potential market impact for your portfolio assets, helping users make informed decisions in volatile markets.
+
+## ✨ Features
+
+- 🔍 **Real-time Twitter Monitoring** - Track tweets from crypto influencers and financial accounts
+- 🤖 **AI-Powered Sentiment Analysis** - Analyze tweet sentiment and market impact
+- 📊 **Portfolio Integration** - Get personalized notifications about assets in your portfolio
+- 🔔 **Smart Notifications** - Receive alerts when tweets might influence your investments
+- 📱 **Multi-channel Notifications** - Email, SMS, Telegram notifications
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- Redis
+- PostgreSQL
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url>
+   cd sentyfi-api
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup**
+
+   ```bash
+   cp .env.template .env.local
+   # Edit .env with your configuration
+   ```
+
+4. **Database Setup**
+
+   ```bash
+   # Run database migrations
+   npm run migrate:local
+
+   # Start Prisma Studio (optional)
+   npm run studio:local
+   ```
+
+5. **Start the application**
+
+   ```bash
+   # Local mode
+   npm run start:local
+
+    # Development mode
+   npm run start:dev
+
+   # Production mode
+   npm run start:prod
+   ```
+
+## 🗄️ Database Management
+
+### Prisma Commands
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Run migrations
+npm run migrate:local    # Local environment
+npm run migrate:dev      # Development environment
+npm run migrate:prod     # Production environment
+
+# Open Prisma Studio
+npm run studio:local     # Local environment
+npm run studio:dev       # Development environment
+npm run studio:prod      # Production environment
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
 
-## Learn More
+# Local
+npm run start:local       # Start in production mode
 
-To learn more about Next.js, take a look at the following resources:
+# Development
+npm run start:dev        # Start in development mode
+npm run start:debug      # Start with debugging enabled
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Production
+npm run start:prod       # Start in production mode
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Building
+npm run build           # Build the application
+```
 
-## Deploy on Vercel
+## 📊 API Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### GraphQL Playground
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Access the GraphQL playground at: http://localhost:3000/graphql
+
+### OpenAPI Documentation
+
+Access the OpenAPI/Swagger documentation at: http://localhost:3000/api
+
+## 🔌 Integrations
+
+### External Services
+
+- **Twitter API v2** - Real-time tweet streaming and historical data access
+- **OpenAI API** - GPT-based sentiment analysis and market impact predictions
+- **Polygon API** - Real-time stock and crypto market data feeds
+- **SendGrid** - Transactional email notifications and alerts
+- **Twilio** - SMS notifications and phone verification
+- **Telegram Bot API** - Instant messaging notifications and commands
+
+### Database & Cache
+
+- **PostgreSQL** - Primary database (via Prisma)
+- **Redis** - Caching and session management
+
+## 🛠️ Local Development Setup
+
+### Redis Setup (Windows WSL)
+
+```bash
+# Open WSL
+wsl
+
+# Install Redis
+sudo apt update
+sudo apt install redis-server
+
+# Start Redis service
+sudo service redis-server start
+
+# Test connection
+redis-cli ping
+# Should return: PONG
+```
+
+**Built with ❤️ using NestJS, Prisma, and TypeScript**

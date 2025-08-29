@@ -31,16 +31,16 @@ export default function Home() {
             </a>
           </nav>
           <div className="flex items-center space-x-4">
-            <Link href={`${APP_URL}/auth/sign-in`} target="_blank">
+            <a href={`${APP_URL}/auth/sign-in`} target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="sm" className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
                 Login
               </Button>
-            </Link>
-            <Link href={`${APP_URL}/auth/sign-up`} target="_blank">
+            </a>
+            <a href={`${APP_URL}/auth/sign-up`} target="_blank" rel="noopener noreferrer">
               <Button size="sm" className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200">
                 Register
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </header>
@@ -62,11 +62,11 @@ export default function Home() {
               <p className="text-xl text-slate-500 dark:text-slate-500 mb-16 max-w-4xl mx-auto">Whether Elon Musk tweets about Tesla or breaking news drops about Bitcoin regulation, get personalized alerts instantly across all your preferred channels.</p>
 
               <div className="flex justify-center items-center mb-16">
-                <Link href={`${APP_URL}/auth/sign-up`} target="_blank">
+                <a href={`${APP_URL}/auth/sign-up`} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-xl px-12 py-6 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 font-semibold">
                     Start Free Trial
                   </Button>
-                </Link>
+                </a>
               </div>
 
               <div className="flex items-center justify-center space-x-8 text-sm text-slate-500 dark:text-slate-400">
@@ -427,9 +427,9 @@ export default function Home() {
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-4 text-sm">Create your account and start monitoring your portfolio in minutes.</p>
                 <div className="flex justify-center">
-                  <Link href={`${APP_URL}/auth/sign-up`} target="_blank">
+                  <a href={`${APP_URL}/auth/sign-up`} target="_blank" rel="noopener noreferrer">
                     <Button className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 whitespace-nowrap">Start Free Trial</Button>
-                  </Link>
+                  </a>
                 </div>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">No credit card required • Cancel anytime</p>
               </div>
